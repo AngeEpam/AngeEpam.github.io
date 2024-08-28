@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #fuchsia;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh; /* Ensures the container takes up at least the full height of the viewport */
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Make sure it takes full width available */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 150px; /* Adjust width as needed */
+    max-height: 150px; /* Adjust height as needed */
+    width: auto;
+    height: auto;
+    border: 4px solid #fuchsia;
+    object-fit: cover;
+}
+
+.hologram-text {
+    text-align: center;
+    color: #fuchsia;
+    text-shadow: 0px 0px 8px rgba(255, 0, 255, 0.7), 
+                 0px 0px 15px rgba(255, 0, 255, 0.5),
+                 0px 0px 30px rgba(255, 0, 255, 0.3);
+    animation: colorChange 5s infinite;
+}
+
+.highlight {
+    color: yellow;
+    text-shadow: none;
+}
+
+@keyframes colorChange {
+    0% { color: #fuchsia; }
+    25% { color: cyan; }
+    50% { color: yellow; }
+    75% { color: lime; }
+    100% { color: #fuchsia; }
+}
+
+.link {
+    color: #fuchsia;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: yellow;
+}
+
+.update {
+    color: #fuchsia;
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.pirate-flag {
+    width: 100px;
+}
